@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.1" encoding="utf-8"?>
 <odoo>
 
     <record id="invoice_form" model="ir.ui.view">
@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="account.invoice_form"/>
         <field name="arch" type="xml">
             <xpath expr="//div[@name='button_box']" position="inside">
-                <field name="custom_url" widget="url" text="Open Report" class="btn btn-sm btn-default oe_inline oe_bold" target="_blank"/>
+                <field name="custom_url" widget="url" text="Imprimir Factura" class="btn btn-sm btn-default oe_inline oe_bold" target="_blank"/>
             </xpath>
         </field>
     </record>
@@ -19,7 +19,7 @@
         <field name="arch" type="xml">
             <xpath expr="//sheet/div" position="before">
             	<div class="oe_button_box" name="button_box">
-            		<field name="custom_url" widget="url" text="Open Report" class="btn btn-sm btn-default oe_inline oe_bold" target="_blank"/>
+            		<field name="custom_url" widget="url" text="Imprimir Factura" class="btn btn-sm btn-default oe_inline oe_bold" target="_blank"/>
                 </div>
             </xpath>
         </field>
